@@ -4,3 +4,5 @@ pydantic
 sqlalchemy
 pymysql
 cryptography
+requests
+python-multipart
