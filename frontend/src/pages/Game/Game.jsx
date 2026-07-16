@@ -56,7 +56,7 @@ const Game = () => {
 		setMessage("");
 		try {
 			const response = await axios.post(
-				"https://considerate-alignment-production-2d97.up.railway.app/api/choose-starter",
+				"https://unique-achievement-production-6621.up.railway.app/api/choose-starter",
 				{
 					trainerId: user.trainer_id, // Ensure this matches your user data property
 					chosenPokemon: selectedStarter,

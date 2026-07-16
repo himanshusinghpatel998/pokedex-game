@@ -55,7 +55,7 @@ const Pokedex = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await axios.get("https://considerate-alignment-production-2d97.up.railway.app/pokemon");
+        const response = await axios.get("https://unique-achievement-production-6621.up.railway.app/pokemon");
         setPokemonList(response.data);
       } catch (error) {
         console.error("Error fetching Pokémon:", error);

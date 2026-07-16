@@ -10,7 +10,7 @@ const Level1 = () => {
   useEffect(() => {
     const fetchLevelData = async () => {
       try {
-        const response = await axios.get("https://considerate-alignment-production-2d97.up.railway.app/level/1");
+        const response = await axios.get("https://unique-achievement-production-6621.up.railway.app/level/1");
         setLevelData(response.data);
       } catch (err) {
         console.error("Error fetching level data:", err.response || err.message);
