@@ -4,11 +4,13 @@ import { useUser } from "../../App";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./BattleGround.css";
+const TRAINER_API =
+  "https://unique-achievement-production-6621.up.railway.app";
 
-const TRAINER_API = "https://unique-achievement-production-6621.up.railway.app";
-const LEVEL_API = "https://unique-achievement-production-6621.up.railway.app";
+const LEVEL_API =
+  "https://considerate-alignment-production-2d97.up.railway.app";
+
 const DAMAGE_ENDPOINT = `${LEVEL_API}/calculate_damage/`;
-
 const BattleSim = ({ levelData, levelNumber, isEscapeAllowed = false }) => {
   const { user } = useUser();
   const trainerId = user?.trainer_id;
