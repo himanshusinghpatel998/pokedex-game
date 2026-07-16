@@ -36,7 +36,7 @@ def simulate_battle(battle: BattleSimRequest):
         "pokemon2": battle.trainer_pokemon.model_dump()
     }
     try:
-        turn_order_response = requests.post("http://localhost:8000/turn_order/", json=turn_data)
+        turn_order_response = requests.post("https://considerate-alignment-production-2d97.up.railway.app/turn_order/", json=turn_data)
         if turn_order_response.status_code != 200:
             raise HTTPException(status_code=500, detail="Turn order request failed")
         turn_order_data = turn_order_response.json()
@@ -65,7 +65,7 @@ def simulate_battle(battle: BattleSimRequest):
                 "move": move.model_dump()
             }
             try:
-                damage_response = requests.post("http://localhost:8000/calculate_damage/", json=calc_payload)
+                damage_response = requests.post("https://considerate-alignment-production-2d97.up.railway.app/calculate_damage/", json=calc_payload)
                 if damage_response.status_code != 200:
                     raise HTTPException(status_code=500, detail="Damage calculation request failed")
                 damage_data = damage_response.json()
