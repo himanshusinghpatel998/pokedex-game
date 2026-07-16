@@ -73,7 +73,7 @@ function App() {
       const token = localStorage.getItem("token");
       if (storedUser && token) {
         try {
-          const response = await fetch("http://unique-achievement-production-6621.up.railway.app/api/validate", {
+          const response = await fetch("https://unique-achievement-production-6621.up.railway.app/api/validate", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",

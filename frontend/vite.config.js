@@ -11,7 +11,7 @@ export default defineConfig({
 	},
 	server: {
 		proxy: {
-		  '/api': 'http://unique-achievement-production-6621.up.railway.app',
+		  '/api': 'https://unique-achievement-production-6621.up.railway.app',
 		},
 	},
 });

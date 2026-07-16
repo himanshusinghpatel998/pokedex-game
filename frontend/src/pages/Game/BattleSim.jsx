@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./BattleGround.css";
 
-const TRAINER_API = "http://unique-achievement-production-6621.up.railway.app";
-const LEVEL_API = "http://unique-achievement-production-6621.up.railway.app";
+const TRAINER_API = "https://unique-achievement-production-6621.up.railway.app";
+const LEVEL_API = "https://unique-achievement-production-6621.up.railway.app";
 const DAMAGE_ENDPOINT = `${LEVEL_API}/calculate_damage/`;
 
 const BattleSim = ({ levelData, levelNumber, isEscapeAllowed = false }) => {

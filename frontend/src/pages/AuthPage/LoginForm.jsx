@@ -18,7 +18,7 @@ const LoginForm = () => {
 
     try {
       // First, login
-      const response = await fetch("http://unique-achievement-production-6621.up.railway.app/api/login", {
+      const response = await fetch("https://unique-achievement-production-6621.up.railway.app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -30,7 +30,7 @@ const LoginForm = () => {
 
         // Immediately call the validate endpoint to get full user data
         const validateResponse = await fetch(
-          "http://unique-achievement-production-6621.up.railway.app/api/validate",
+          "https://unique-achievement-production-6621.up.railway.app/api/validate",
           {
             method: "GET",
             headers: {
