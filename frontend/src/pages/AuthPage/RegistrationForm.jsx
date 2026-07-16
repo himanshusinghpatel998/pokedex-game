@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../App";
 
 const API_URL =
-  "https://unique-achievement-production-6621.up.railway.app";
+  "https://considerate-alignment-production-2d97.up.railway.app";
 
 const RegistrationForm = () => {
   const { setUser } = useUser();

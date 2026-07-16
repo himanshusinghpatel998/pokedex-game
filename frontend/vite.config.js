@@ -11,7 +11,7 @@ export default defineConfig({
 	},
 	server: {
 		proxy: {
-		  '/api': 'https://unique-achievement-production-6621.up.railway.app',
+		  '/api': 'https://considerate-alignment-production-2d97.up.railway.app',
 		},
 	},
 });

@@ -17,7 +17,7 @@ function ChatGround() {
   // Connect to Railway Socket.IO server
   useEffect(() => {
     const newSocket = io(
-      "https://unique-achievement-production-6621.up.railway.app",
+      "https://considerate-alignment-production-2d97.up.railway.app",
       {
         transports: ["websocket", "polling"],
       }

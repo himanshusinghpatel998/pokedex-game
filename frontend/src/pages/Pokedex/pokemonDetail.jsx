@@ -43,7 +43,7 @@ function PokemonDetail() {
     try {
       setLoading(true);
       setError(null);
-      const { data } = await axios.get(`https://unique-achievement-production-6621.up.railway.app/pokemon-detail/${id}`);
+      const { data } = await axios.get(`https://considerate-alignment-production-2d97.up.railway.app/pokemon-detail/${id}`);
       setPokemon(data);
       // Set primary type color (data.types is an array of strings)
       if (data.types && data.types.length > 0) {
