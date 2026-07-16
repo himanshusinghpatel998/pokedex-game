@@ -12,7 +12,7 @@ var vite_config_default = defineConfig({
   },
   server: {
     proxy: {
-      "/api": "http://localhost:5000"
+      "/api": "http://unique-achievement-production-6621.up.railway.app"
     }
   }
 });
